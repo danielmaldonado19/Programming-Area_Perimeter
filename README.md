@@ -6,10 +6,9 @@ This project will calculate the area and perimeter of regular poligons such circ
 
 * The program should ask to user how many sides does the polygon has. (For simplify, the one sided polygon corresponds to circle).
 * User should type the required basic measurements according the polygon's formula (i.e. the circle needs radius; the regular polygon needs sides number and side's lenght).
-* El programa debe definir cuando los valores ingresados son validos y cual es el limite de lados que debe tener el poligono que se desea calcular (esto depende de lo complejas que se vuelvan las operaciones segun el numero de lados).
-* El programa debe contener las formulas de los poligonos y que, de acuerdo a los valores ingresados (sobretodo el numero de lados), se ejecuten los calculos correctos.
-* El usuario debe mostrar el resultado de la operacion.
-* El usuario podra reiniciar el proceso cuantas veces desee.
+* The program should report if the required values are valid.
+* The program will show the operation's results.
+* User has the option of use the program any given times.
 
 ### Bugs
 
@@ -38,7 +37,7 @@ If (numLados < 1){
 
 }
 Else if (numLados == 1){
-    radio = 2;
+    var radio = 2;
     var perimetro = 2 * Math.PI * radio;
     var area = Math.PI * radio * radio;
 }
@@ -51,3 +50,27 @@ Perimetro;
 Area;
 
 Ejercicio 2: De acuerdo a los parametros que ingrese el usuario, se activaran ciertas funciones.
+
+## Algoritm
+
+var sidesNum;
+
+if(sidesNum > 1)------------------------------------------ 
+        v                           
+var sideLenght;
+var perimeter = sidesNum * sideLenght;
+var theta = 360 / (2 * sidesNum);
+var apotem = sideLenght / (2 * Math.tan(theta));
+var area = (perimeter * apothem) / 2; 
+
+-> else if(sides == 1)-------------------------------------
+        v
+var radius;
+var perimeter = 2 * Math.PI * radius;
+var area = Math.PI * radius * radius;
+
+->else
+    v
+Prompt(Error, value's not allowed)
+
+close if
