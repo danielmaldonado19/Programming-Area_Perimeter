@@ -12,44 +12,42 @@ This project will calculate the area and perimeter of regular poligons such circ
 
 ### Bugs
 
-* Ingresa parametros no numericos.
-* Ingresa en la variable numLados un numero float.
-* No ingresar ningun valor
+* Enter non-numeric parameters.
+* Enter sidesNum variable as a float number.
+* Non entering a value (empty input).
 
 
 ## Manual Exercise
 
-Tendremos como limite el poligono regular de 10 lados.
+For this exercise, we found out the formula for any given regular polygon with n sides.
 
-Ejercicio 1: Se brindan los parametros basicos
+Exercise 1: User only has to input the very basic values (sides number, side lenght or radius).
 
-var numLados = 3;
-var polygon =  [circle, polygon];
+var sidesNum = 3;
 var area;
-var perimetro;
+var perimeter;
 
-If (numLados < 1){
-    var longitudLado = 5;
-    var perimetro = numLados * longitudLado;
-    var teta = 360 / (2 * numLados);
-    var apotema = longitudLado / (2 * Math.tan(teta));
-    var area = (perimetro * apotema) / 2;
+If (sidesNum < 1){
+    var sideLength = 5;
+    var perimeter = sidesNum * sideLength;
+    var theta = 360 / (2 * sidesNum);
+    var apothem = sideLength / (2 * Math.tan(theta));
+    var area = (perimeter * apothem) / 2;
 
 }
-Else if (numLados == 1){
-    var radio = 2;
-    var perimetro = 2 * Math.PI * radio;
-    var area = Math.PI * radio * radio;
+Else if (sidesNum == 1){
+    var radius = 2;
+    var perimeter = 2 * Math.PI * radius;
+    var area = Math.PI * radius * radius;
 }
 Else{
-    El usuario ingresa un valor no permitido para numLados
+    El usuario ingresa un valor no permitido para sidesNum
 }
 
-Print
-Perimetro; 
-Area;
+print perimeter; 
+print area;
 
-Ejercicio 2: De acuerdo a los parametros que ingrese el usuario, se activaran ciertas funciones.
+Ejercicio 2: Acording of the parameters the user types as input, the program will calculate the area and perimeter with the most efective formula for the task (due the many ways we can obtain such results).
 
 ## Algoritm
 
@@ -57,10 +55,10 @@ var sidesNum;
 
 if(sidesNum > 1)------------------------------------------ 
         v                           
-var sideLenght;
-var perimeter = sidesNum * sideLenght;
+var sideLength;
+var perimeter = sidesNum * sideLength;
 var theta = 360 / (2 * sidesNum);
-var apotem = sideLenght / (2 * Math.tan(theta));
+var apotem = sideLength / (2 * Math.tan(theta));
 var area = (perimeter * apothem) / 2; 
 
 -> else if(sides == 1)-------------------------------------
