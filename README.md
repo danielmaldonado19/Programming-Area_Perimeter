@@ -52,14 +52,18 @@ Ejercicio 2: Acording of the parameters the user types as input, the program wil
 ## Algoritm
 
 var sidesNum;
+var perimeter;
+var area;
 
 if(sidesNum > 1)------------------------------------------ 
         v                           
 var sideLength;
-var perimeter = sidesNum * sideLength;
+perimeter = sidesNum * sideLength;
+
 var theta = 360 / (2 * sidesNum);
-var apotem = sideLength / (2 * Math.tan(theta));
-var area = (perimeter * apothem) / 2; 
+var apothem = sideLength / (2 * Math.tan(theta));
+
+area = (perimeter * apothem) / 2; 
 
 -> else if(sides == 1)-------------------------------------
         v
