@@ -23,7 +23,7 @@ function calculate(){
 
    //2.-----------------------------------------------------------------
     if(sidesNum > 1){
-        var sideLength = 5;
+        var sideLength = window.prompt("What's the polygon sides lenght");
         perimeter = sidesNum * sideLength;
         var theta = 360 / (2 * sidesNum);
         var apothem = sideLength / (2 * Math.tan(theta * Math.PI / 180));
@@ -31,7 +31,7 @@ function calculate(){
 
     }
     else if(sidesNum == 1){
-        var radius = 10;
+        var radius = window.prompt("Whta's the circle's radius");
         var perimeter = 2 * Math.PI * radius;
         var area = Math.PI * radius * radius;
 
@@ -42,7 +42,7 @@ function calculate(){
     }
     console.log(perimeter);
     console.log(area);
-     
+    result.innerHTML = "Your polygon has " + sidesNum + " sides. Its perimeter is " + perimeter + " and its area is " + area;
 }
 
 
