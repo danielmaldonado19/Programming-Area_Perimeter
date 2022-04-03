@@ -3,6 +3,7 @@
 2.Button's function for doing the math operations of the circle.
 3.Triangle's required functions
 4.Button's activation function for triangle calculations.
+5.Do the same process for square
 */
 
 //Circle
@@ -66,6 +67,7 @@ function triangleCalculation(){
 
 //Square
 
+//5.------------------------------------------------------
 function squaPerimeter(sidesLength){
     var squarePerimeter = (sidesLength * 4);
     return squarePerimeter;
@@ -74,5 +76,16 @@ function squaPerimeter(sidesLength){
 function squaArea(sidesLength){
     var squareArea = (sidesLength * sidesLength);
     return squareArea;
+}
+
+function squareCalculation() {
+    var sideLength = document.getElementById("inputSquaSideLenght").value;
+    var squarePerimeter = squaPerimeter(sideLength);
+    var squareArea = squaArea(sideLength);
+
+    squarePerimeter = squarePerimeter.toFixed(2);
+    squareArea = squareArea.toFixed(2);
+
+    document.getElementById("squareResult").innerHTML = "For a square with SIDE LENGTH: " + sideLength + "cm ," + " the resulting PERIMETER is " + squarePerimeter + "cm and the AREA is " + squareArea + "cm2";
 }
 
