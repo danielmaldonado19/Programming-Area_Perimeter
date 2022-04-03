@@ -7,7 +7,26 @@
     <title>Polygon's Calculator</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Polygon's Area & Perimeter Calculator</h1>
+        <p>This website will help you by finding out for you the area and perimeter of geometric figures.</p>
+    </header>
+    <hr>
+    <section>
+        <h3>Circle</h3>
+        <form action="">
+            <label for="inputCirRadius">Enter the circle's radius:</label>
+            <!-- "for attribute is used to point wich is the element(with same id attirbute name) the label is bound to" -->
+            <br>
+            <input id="inputCirRadius" type="number">
+            <br>
+            <input type="button" id="circleOperation" value="Calculate" onclick="circleCalculation()">
+        </form>
+    </section>
+    <p id="circleResult"></p>
+    <hr>
+
+
     <script src="./figures.js"></script>
 </body>
 </html>
